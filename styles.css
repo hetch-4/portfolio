@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+#navbar ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*welcome section*/
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to right, #4A90E2, #004bc4); /* Gradient Background */
+    position: relative;
+    z-index: -1;
+}
+
+.welcome-container {
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    z-index: 2;
+}
+
+.welcome-img-container {
+    width: 300px;
+    height: 50vh;
+    border-radius: 75%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0%; /* Positioning on the left */
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2); /* Subtle background effect */
+    border: 20px solid transparent;
+}
+
+.welcome-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+h1, p {
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+
+/*Project section*/
+#projects{
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    height: 70vh;
+}
+.project-tile{
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+}
+.project-tile  img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-tile p{
+    margin-top: 10px;
+    color: black;
+}
+
+/*Contact section*/
+#contact{
+    padding: 50px;
+    background-color: #222;
+    color: white;
+}
+
+/*Responsive design*/
+@media( max-width: 768px){
+    #navbar ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    .project-tile{
+        width:1 00%;
+    }
+    h1, p{
+        color: whitesmoke;
+        background: rgba(0, 0, 0, 0.507);
+        padding: 10px;
+        border-radius: 15px;
+    }
+    #projects{
+        height: auto;
+    }
+    #navbar ul{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    #navbar ul li{
+        margin-right: 20px;
+    }
+    #welcome-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome-container{
+        left:50%;
+    }
+}
