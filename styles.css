@@ -47,7 +47,7 @@ header nav a{
     justify-content: center;
     align-items: baseline;
     height: 100vh;
-    background: linear-gradient( #1aeebce5,#2be0b6d3, #00c597c5, #12b3ab, #0da9d9d5, #009dffc7,#009dffaf );
+    background: linear-gradient( #1aeebce5,#2be0b6d3, #00c597c5, #12b3ab, #0da9d9d5, #009dffc7 );
 }
 .profile-img{
     width: 30%;
@@ -81,10 +81,22 @@ header nav a{
 }
 
 .out-el{
-    background: linear-gradient(#009dffaf, #00000048);
+    background: linear-gradient(#009dffc7,#1aeebce5,#2be0b6d3, #00c597c5,#009dffaf, #000000de);
     padding:5px;
 }
 /*Contact section*/
+#Contact{
+    margin:20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 25px;;
+}
+.social-icons a{
+    margin: 5px;
+}
 form{
     display: flex;
     flex-direction: column;
